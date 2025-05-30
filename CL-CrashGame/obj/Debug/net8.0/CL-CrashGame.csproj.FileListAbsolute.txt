@@ -9,3 +9,15 @@ C:\Users\Sanda\OneDrive - UPB\Archivos Materias\Tercer Semestre\Extra\P-SimonSum
 C:\Users\Sanda\OneDrive - UPB\Archivos Materias\Tercer Semestre\Extra\P-SimonSummer\CL-CrashGame\obj\Debug\net8.0\refint\CL-CrashGame.dll
 C:\Users\Sanda\OneDrive - UPB\Archivos Materias\Tercer Semestre\Extra\P-SimonSummer\CL-CrashGame\obj\Debug\net8.0\CL-CrashGame.pdb
 C:\Users\Sanda\OneDrive - UPB\Archivos Materias\Tercer Semestre\Extra\P-SimonSummer\CL-CrashGame\obj\Debug\net8.0\ref\CL-CrashGame.dll
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\CL-CrashGame\bin\Debug\net8.0\CL-CrashGame.deps.json
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\CL-CrashGame\bin\Debug\net8.0\CL-CrashGame.dll
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\CL-CrashGame\bin\Debug\net8.0\CL-CrashGame.pdb
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\CL-CrashGame\obj\Debug\net8.0\CL-CrashGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\CL-CrashGame\obj\Debug\net8.0\CL-CrashGame.AssemblyInfoInputs.cache
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\CL-CrashGame\obj\Debug\net8.0\CL-CrashGame.AssemblyInfo.cs
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\CL-CrashGame\obj\Debug\net8.0\CL-CrashGame.csproj.CoreCompileInputs.cache
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\CL-CrashGame\obj\Debug\net8.0\CL-CrashGame.sourcelink.json
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\CL-CrashGame\obj\Debug\net8.0\CL-CrashGame.dll
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\CL-CrashGame\obj\Debug\net8.0\refint\CL-CrashGame.dll
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\CL-CrashGame\obj\Debug\net8.0\CL-CrashGame.pdb
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\CL-CrashGame\obj\Debug\net8.0\ref\CL-CrashGame.dll

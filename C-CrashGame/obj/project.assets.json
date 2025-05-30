@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sanda\\OneDrive - UPB\\Archivos Materias\\Tercer Semestre\\Extra\\P-SimonSummer\\C-CrashGame\\C-CrashGame.csproj",
+      "projectUniqueName": "C:\\Users\\Sanda\\OneDrive - UPB\\Archivos Materias\\3. Tercer Semestre\\Extra\\P-SimonSummer\\C-CrashGame\\C-CrashGame.csproj",
       "projectName": "C-CrashGame",
-      "projectPath": "C:\\Users\\Sanda\\OneDrive - UPB\\Archivos Materias\\Tercer Semestre\\Extra\\P-SimonSummer\\C-CrashGame\\C-CrashGame.csproj",
+      "projectPath": "C:\\Users\\Sanda\\OneDrive - UPB\\Archivos Materias\\3. Tercer Semestre\\Extra\\P-SimonSummer\\C-CrashGame\\C-CrashGame.csproj",
       "packagesPath": "C:\\Users\\Sanda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sanda\\OneDrive - UPB\\Archivos Materias\\Tercer Semestre\\Extra\\P-SimonSummer\\C-CrashGame\\obj\\",
+      "outputPath": "C:\\Users\\Sanda\\OneDrive - UPB\\Archivos Materias\\3. Tercer Semestre\\Extra\\P-SimonSummer\\C-CrashGame\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

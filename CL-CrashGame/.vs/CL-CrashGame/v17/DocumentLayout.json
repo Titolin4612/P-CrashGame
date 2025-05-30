@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Sanda\\OneDrive - UPB\\Archivos Materias\\Tercer Semestre\\Extra\\P-SimonSummer\\CL-CrashGame\\",
+  "WorkspaceRootPath": "C:\\Users\\Sanda\\OneDrive - UPB\\Archivos Materias\\3. Tercer Semestre\\Extra\\P-SimonSummer\\CL-CrashGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{040B4E9C-E9B6-4421-AFB2-072F587C7336}|CL-CrashGame.csproj|c:\\users\\sanda\\onedrive - upb\\archivos materias\\tercer semestre\\extra\\p-simonsummer\\cl-crashgame\\clases\\crashgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{040B4E9C-E9B6-4421-AFB2-072F587C7336}|CL-CrashGame.csproj|c:\\users\\sanda\\onedrive - upb\\archivos materias\\3. tercer semestre\\extra\\p-simonsummer\\cl-crashgame\\clases\\crashgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{040B4E9C-E9B6-4421-AFB2-072F587C7336}|CL-CrashGame.csproj|solutionrelative:clases\\crashgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -36,11 +36,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "CrashGame.cs",
-              "DocumentMoniker": "C:\\Users\\Sanda\\OneDrive - UPB\\Archivos Materias\\Tercer Semestre\\Extra\\P-SimonSummer\\CL-CrashGame\\Clases\\CrashGame.cs",
+              "DocumentMoniker": "C:\\Users\\Sanda\\OneDrive - UPB\\Archivos Materias\\3. Tercer Semestre\\Extra\\P-SimonSummer\\CL-CrashGame\\Clases\\CrashGame.cs",
               "RelativeDocumentMoniker": "Clases\\CrashGame.cs",
-              "ToolTip": "C:\\Users\\Sanda\\OneDrive - UPB\\Archivos Materias\\Tercer Semestre\\Extra\\P-SimonSummer\\CL-CrashGame\\Clases\\CrashGame.cs",
+              "ToolTip": "C:\\Users\\Sanda\\OneDrive - UPB\\Archivos Materias\\3. Tercer Semestre\\Extra\\P-SimonSummer\\CL-CrashGame\\Clases\\CrashGame.cs",
               "RelativeToolTip": "Clases\\CrashGame.cs",
-              "ViewState": "AgIAAMQAAAAAAAAAAAAcwBkAAABxAAAAAAAAAA==",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAIwKEAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-29T04:23:40.072Z",
               "EditorCaption": ""

@@ -16,3 +16,22 @@ C:\Users\Sanda\OneDrive - UPB\Archivos Materias\Tercer Semestre\Extra\P-SimonSum
 C:\Users\Sanda\OneDrive - UPB\Archivos Materias\Tercer Semestre\Extra\P-SimonSummer\C-CrashGame\obj\Debug\net8.0\C-CrashGame.pdb
 C:\Users\Sanda\OneDrive - UPB\Archivos Materias\Tercer Semestre\Extra\P-SimonSummer\C-CrashGame\obj\Debug\net8.0\C-CrashGame.genruntimeconfig.cache
 C:\Users\Sanda\OneDrive - UPB\Archivos Materias\Tercer Semestre\Extra\P-SimonSummer\C-CrashGame\obj\Debug\net8.0\ref\C-CrashGame.dll
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\C-CrashGame\bin\Debug\net8.0\C-CrashGame.exe
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\C-CrashGame\bin\Debug\net8.0\C-CrashGame.deps.json
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\C-CrashGame\bin\Debug\net8.0\C-CrashGame.runtimeconfig.json
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\C-CrashGame\bin\Debug\net8.0\C-CrashGame.dll
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\C-CrashGame\bin\Debug\net8.0\C-CrashGame.pdb
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\C-CrashGame\bin\Debug\net8.0\CL-CrashGame.dll
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\C-CrashGame\bin\Debug\net8.0\CL-CrashGame.pdb
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\C-CrashGame\obj\Debug\net8.0\C-CrashGame.csproj.AssemblyReference.cache
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\C-CrashGame\obj\Debug\net8.0\C-CrashGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\C-CrashGame\obj\Debug\net8.0\C-CrashGame.AssemblyInfoInputs.cache
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\C-CrashGame\obj\Debug\net8.0\C-CrashGame.AssemblyInfo.cs
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\C-CrashGame\obj\Debug\net8.0\C-CrashGame.csproj.CoreCompileInputs.cache
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\C-CrashGame\obj\Debug\net8.0\C-CrashGame.sourcelink.json
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\C-CrashGame\obj\Debug\net8.0\C-CrashG.D3569E36.Up2Date
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\C-CrashGame\obj\Debug\net8.0\C-CrashGame.dll
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\C-CrashGame\obj\Debug\net8.0\refint\C-CrashGame.dll
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\C-CrashGame\obj\Debug\net8.0\C-CrashGame.pdb
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\C-CrashGame\obj\Debug\net8.0\C-CrashGame.genruntimeconfig.cache
+C:\Users\Sanda\OneDrive - UPB\Archivos Materias\3. Tercer Semestre\Extra\P-SimonSummer\C-CrashGame\obj\Debug\net8.0\ref\C-CrashGame.dll
