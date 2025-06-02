@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{040B4E9C-E9B6-4421-AFB2-072F587C7336}|CL-CrashGame.csproj|c:\\users\\sanda\\onedrive - upb\\archivos materias\\3. tercer semestre\\extra\\p-simonsummer\\cl-crashgame\\clases\\crashgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{040B4E9C-E9B6-4421-AFB2-072F587C7336}|CL-CrashGame.csproj|solutionrelative:clases\\crashgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{040B4E9C-E9B6-4421-AFB2-072F587C7336}|CL-CrashGame.csproj|c:\\users\\sanda\\onedrive - upb\\archivos materias\\3. tercer semestre\\extra\\p-simonsummer\\cl-crashgame\\clases\\jugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{040B4E9C-E9B6-4421-AFB2-072F587C7336}|CL-CrashGame.csproj|solutionrelative:clases\\jugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,13 +38,26 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Jugador.cs",
+              "DocumentMoniker": "C:\\Users\\Sanda\\OneDrive - UPB\\Archivos Materias\\3. Tercer Semestre\\Extra\\P-SimonSummer\\CL-CrashGame\\Clases\\Jugador.cs",
+              "RelativeDocumentMoniker": "Clases\\Jugador.cs",
+              "ToolTip": "C:\\Users\\Sanda\\OneDrive - UPB\\Archivos Materias\\3. Tercer Semestre\\Extra\\P-SimonSummer\\CL-CrashGame\\Clases\\Jugador.cs",
+              "RelativeToolTip": "Clases\\Jugador.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T04:54:42.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "CrashGame.cs",
               "DocumentMoniker": "C:\\Users\\Sanda\\OneDrive - UPB\\Archivos Materias\\3. Tercer Semestre\\Extra\\P-SimonSummer\\CL-CrashGame\\Clases\\CrashGame.cs",
               "RelativeDocumentMoniker": "Clases\\CrashGame.cs",
               "ToolTip": "C:\\Users\\Sanda\\OneDrive - UPB\\Archivos Materias\\3. Tercer Semestre\\Extra\\P-SimonSummer\\CL-CrashGame\\Clases\\CrashGame.cs",
               "RelativeToolTip": "Clases\\CrashGame.cs",
-              "ViewState": "AgIAAIYAAAAAAAAAAAAIwKEAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAN0AAAAAAAAAAAAuwOgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-29T04:23:40.072Z",
               "EditorCaption": ""

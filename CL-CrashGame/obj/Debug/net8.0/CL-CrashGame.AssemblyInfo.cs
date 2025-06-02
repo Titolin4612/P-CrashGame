@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CL-CrashGame")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+993ca0ce343f82c4c5df18c72871180dc1bccfe3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cdca7c4366a07c3db82fcf4f9a8a6c9fab989c1e")]
 [assembly: System.Reflection.AssemblyProductAttribute("CL-CrashGame")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CL-CrashGame")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

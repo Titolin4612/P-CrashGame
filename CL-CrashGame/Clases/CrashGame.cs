@@ -1,167 +1,254 @@
 ﻿using System;
+using System.ComponentModel.Design;
 
 namespace CL_CrashGame.Clases
 {
     public class CrashGame
     {
         // Atributos
-        private double multiplicador; // Pa llevar la cuenta de cuánto sube esa mierda si sabe
+        private double multiplicador;
         private double puntoColision; // Donde el astronauta se muere ese hp
-        private double apuestaJugador; // Plata que el mka mete pal chance
-        private double multiplicadorJugadorCobrado; // Cuánto se corono la gonorrea
+
+
+
+
+        private List<ConsoleKey> l_teclas = new List<ConsoleKey>{
+
+            ConsoleKey.Z,ConsoleKey.X,ConsoleKey.C,ConsoleKey.V,ConsoleKey.B
+
+        };
+
+        private List<Jugador> l_jugadores;
 
         // Atributos de estado
-        private bool juegoActivo; // Pa saber si la mkada esta funcionando
-        private bool retiroJugador; 
+        private bool juegoActivo;
+
+
+
 
         // Random
-        private Random generadorAleatorio = new Random(); 
+        private Random generadorAleatorio = new Random();
 
         private const double margenCasa = 2.0; // Es como el porcentaje de ganancia de la casa si o q
 
+        //idea de frontend, tanque al que se suben las personas , cada vez que se retira una sale del tanque
+        //minero minando oro y multiplicando hasta que la dinamita explota
+
+        public CrashGame()
+        {
+            l_jugadores = new List<Jugador>();
+        }
+
+
         public void IniciarJuego()
         {
+
+
             Console.WriteLine("===========================================");
-            Console.WriteLine("=== ¡Bienvenido al Casino CesiArmy! ===");
+            Console.WriteLine("=== ¡Bienvenido a CrashTank! ===");
             Console.WriteLine("===========================================");
             Console.WriteLine();
-            Console.WriteLine("El astronauta va a subir y el multiplicador también.");
-            Console.WriteLine("Presiona 'C' pa COBRAR antes de que se estrelle ese hp.");
+            Console.WriteLine("El Tanque comenzara la avanzada y el multiplicador también.");
+            Console.WriteLine("presione tu codigo de salida antes de que el tanque sea destruido");
             Console.WriteLine();
             Console.WriteLine("===========================================");
 
             while (true)
             {
-                IniciarNuevaRonda(); 
-                IniciarRonda(); 
-                MostrarResultadosRonda(); // Mostrar si el mka ganó o se jodió
+                IniciarNuevaRonda();
+                IniciarRonda();
+                MostrarResultadosRonda();
+                l_jugadores.Clear();
 
-                Console.Write("\n¿Jugar otra ronda o miedo? (s/n): ");
+
+
+                Console.Write("\n¿Subete a otro Tanque (s/n): ");
                 if (Console.ReadLine()?.Trim().ToLower() != "s")
                 {
-                    break; // Si el mka le saca el culo, se acaba la mkada
+                    break;
                 }
             }
-            Console.WriteLine("\nGracias por jugar, abrite pa la puta mierda!");
+            Console.WriteLine("\n Fin de la misión!");
         }
 
         private void IniciarNuevaRonda()
         {
             Console.WriteLine("\n--- Nueva Ronda ---");
-            apuestaJugador = ObtenerApuestaJugador(); 
+            LlenarSala();
             multiplicador = 1.0;
-            juegoActivo = true; // La mkada tá prendida
-            retiroJugador = false; // El mka no ha cobrado 
-            multiplicadorJugadorCobrado = 0; // Nada en el bolsillo
+            juegoActivo = true;
 
-            double valorAleatorio = generadorAleatorio.NextDouble(); 
 
-            // Punto de colisión = (100 - MargenPorcentual) / (100 * (1 - valorAleatorio))
-            // asegurando que el retorno por jugador esté por debajo del 100% pq si no perdemos plata si sabe.
+
+
+            double valorAleatorio = generadorAleatorio.NextDouble();
+
+
             puntoColision = (100.0 - margenCasa) / (100.0 * (1.0 - valorAleatorio));
 
-            puntoColision = Math.Floor(puntoColision * 100.0) / 100.0; // Redondear a 2 decimales pa que sea mas chimba
+            puntoColision = Math.Floor(puntoColision * 100.0) / 100.0;
 
-            // Asegurar que el punto de colisión sea como mínimo 1.00x.
-            // como esa gonorrea de formula puede dar menor a 0 en ciertos casos entonces
-            // se ajusta a 1.00x, pa que sea una colisión de una.
+
             if (puntoColision < 1.0)
             {
                 puntoColision = 1.00;
             }
+            Console.WriteLine(puntoColision);
         }
 
-        private double ObtenerApuestaJugador()
+        private double ObtenerApuestaJugador(Jugador jugadorNuevo)
         {
             double montoApuesta;
             while (true)
             {
                 Console.Write($"Ingresa tu apuesta: ");
+
+
                 string entrada = Console.ReadLine();
                 if (double.TryParse(entrada, out montoApuesta) && montoApuesta > 0)
                 {
-                    return montoApuesta; 
+                    jugadorNuevo.Apostar(montoApuesta);
+                    return montoApuesta;
                 }
-                Console.WriteLine("Apuesta inválida. Debe ser un número positivo, no mkadas!");
+                Console.WriteLine("Apuesta inválida. Debe ser un número positivo ");
             }
         }
 
         private void IniciarRonda()
         {
-            Console.WriteLine($"\n¡El astronauta comienza a subir! Apuesta: {apuestaJugador:C}");
-            Console.WriteLine("Presiona 'C' en cualquier momento para COBRAR.");
+            Console.WriteLine($"\n¡El Tanque  comienza a Atacar!!!");
+            Console.WriteLine("Presiona tu codigo  en cualquier momento para Retirarte.");
 
             while (juegoActivo)
             {
                 // 1. Pillar si el multiplicador ya está o pasó el punto de choque
                 if (multiplicador >= puntoColision)
                 {
-                    juegoActivo = false; // Se acabó la mkada
+                    juegoActivo = false;
                     multiplicador = puntoColision;
                     Console.Write($"\rMultiplicador: {multiplicador:F2}x - ");
-                    Console.ForegroundColor = ConsoleColor.Red; // Colorcito bien bellaco pa fail
-                    Console.WriteLine("¡SE CHOCÓ! Muy salado.");
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("¡Tanque destruido! ");
                     Console.ResetColor();
+                    foreach (Jugador soldado in l_jugadores)
+                    {
+                        if (soldado.EstaJugando)
+                        {
+                            soldado.HaGanado = false;
+                        }
+                    }
                     break;
                 }
 
                 // 2. Subir el multiplicador
-                multiplicador += 0.01; // Va subiendo de a poquitos
-                multiplicador = Math.Round(multiplicador, 2); // Redondear a 2 decimales pa que sea chimba
+                multiplicador += 0.01;
+                multiplicador = Math.Round(multiplicador, 2);
 
-                // 3. Mostrar el multiplicador actual. Esa mierda de \r es pa sobreescribir la línea
+                // 3. Mostrar el multiplicador actual. \r es para sobreescribir la línea
                 Console.Write($"\rMultiplicador: {multiplicador:F2}x ");
 
-                // 4. Mirar si don chimbo apreto la 'C'
+
+
+
                 if (Console.KeyAvailable)
                 {
-                    if (Console.ReadKey(true).Key == ConsoleKey.C)
+                    ConsoleKey teclaPresionada = Console.ReadKey(true).Key;
+                    var jugadorRetirado = l_jugadores.FirstOrDefault(j => j.TeclaRetiro == teclaPresionada);
+
+                    if (jugadorRetirado != null)
                     {
-                        IntentarCobrar(); // El mka quiere la plata
-                        if (retiroJugador)
-                        {
-                            juegoActivo = false;
-                            Console.Write($"\rMultiplicador en el momento: {multiplicadorJugadorCobrado:F2}x - ");
-                            Console.ForegroundColor = ConsoleColor.Green; // Colorcito de victoria merlano
-                            Console.WriteLine("¡GANASTE HPTA!");
-                            Console.ResetColor();
-                            break;
-                        }
+                        IntentarCobrar(jugadorRetirado, multiplicador);
+
                     }
                 }
 
-                // 5. Un momentico pa controlar la velocidad, 100ms pa que suba 0.10x por segundo
-                System.Threading.Thread.Sleep(100);
+                if (multiplicador < 3)
+                {
+                    System.Threading.Thread.Sleep(95);
+                }
+                else if (multiplicador >= 3 && multiplicador < 8)
+                {
+                    System.Threading.Thread.Sleep(70);
+                }
+                else
+                {
+                    System.Threading.Thread.Sleep(55);
+
+                }
+
             }
         }
 
-        private void IntentarCobrar()
+        private void IntentarCobrar(Jugador jugadorRetirado, double multiplicadorRetirada)
         {
-            if (juegoActivo && !retiroJugador)
+            if (juegoActivo && jugadorRetirado.EstaJugando)
             {
-                multiplicadorJugadorCobrado = multiplicador; // Guardar el multiplicador cuando el mka cobra
-                retiroJugador = true; // Marcar que el mka ya cobró
+                jugadorRetirado.Saldo += jugadorRetirado.ApuestaActual * multiplicadorRetirada;
+                Console.WriteLine($"el soldado {jugadorRetirado.Usuario}  se ha retirado con exito en {multiplicadorRetirada}x  ------tiene un saldo de {jugadorRetirado.Saldo}");
+                jugadorRetirado.EstaJugando = false;
+                jugadorRetirado.ApuestaActual = 0;
+                jugadorRetirado.HaGanado = true;
             }
         }
+
+
+
+        private void LlenarSala()
+
+        {
+
+            while (true && l_jugadores.Count < 5)
+            {
+
+                if (l_jugadores.Count == 0)
+                {
+
+                    Console.WriteLine("Añade un soldado al juego ");
+                }
+                else
+                {
+                    Console.WriteLine("Entrara un soldado más? (s/n)");
+                    if (Console.ReadLine()?.Trim().ToLower() != "s")
+                    {
+                        break;
+                    }
+                }
+                Console.ForegroundColor = ConsoleColor.Blue;
+
+                Console.WriteLine("cual es el nombre del soldado");
+                string nombreSoldado = Console.ReadLine();
+                Jugador soldado = new Jugador(nombreSoldado);
+                l_jugadores.Add(soldado);
+
+                Console.ResetColor();
+
+                Console.ForegroundColor = ConsoleColor.Magenta;
+
+                Console.WriteLine("cuanto valor tiene el soldado?");
+                ObtenerApuestaJugador(soldado);
+
+                Console.ResetColor();
+
+                Console.ForegroundColor = ConsoleColor.Cyan;
+
+                Console.WriteLine($"su codigo será la tecla {l_teclas[l_jugadores.Count - 1]} ");
+                soldado.TeclaRetiro = l_teclas[l_jugadores.Count - 1];
+
+
+                Console.ResetColor();
+            }
+
+
+        }
+
 
         private void MostrarResultadosRonda()
         {
-            if (retiroJugador) // Si el mka cobró
+            foreach (Jugador soldado in l_jugadores)
             {
-                double ganancia = apuestaJugador * multiplicadorJugadorCobrado;
-                Console.ForegroundColor = ConsoleColor.Green; // Colorcito bien victorinostylo
-                Console.WriteLine($"\n¡Felicidades! Cobraste con éxito a {multiplicadorJugadorCobrado:F2}x.");
-                Console.WriteLine($"Tu apuesta fue de: {apuestaJugador:C}");
-                Console.WriteLine($"Ganaste: {ganancia:C}");
-                Console.ResetColor();
-            }
-            else // Si el astronauta se hizo mierda
-            {
-                Console.ForegroundColor = ConsoleColor.Red; // Color bien gonorrea de fallo
-                Console.WriteLine($"\nEl astronauta se murio a {puntoColision:F2}x.");
-                Console.WriteLine($"Perdiste toda la carechimba apuesta de: {apuestaJugador:C}");
-                Console.ResetColor();
+                Console.WriteLine($"el soldado {soldado.Usuario} ha {(soldado.HaGanado ? "ganado" : "perdido")} y su saldo actual es de {soldado.Saldo}");
             }
         }
+
     }
 }
